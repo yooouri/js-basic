@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /**
+         * 사칙연산 함수
+         * @param {number} n1
+         * @param {number} n1
+         * @returns n1 + n2
+        */
+        function add(n1, n2) {
+            return n1 + n2
+        }
+
+        function minus(n1, n2) {
+            return n1 - n2
+        }
+
+        function multiple(n1, n2) {
+            return n1 * n2
+        }
+
+        function divide(n1, n2) {
+            return n1 / n2
+        }
+
+        function calculator(n1, n2, operator) {
+            if(operator == "+"){
+                return add(n1, n2);
+            }else if(operator == "-"){
+                return minus(n1, n2);
+            }else if(operator == "*"){
+                return multiple(n1, n2);
+            }else if(operator == "/"){
+                return divide(n1, n2);
+            }
+        }
+
+        let result = calculator(42, 24, "+");
+    </script>
+</body>
+</html>

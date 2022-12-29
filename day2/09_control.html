@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+    //   var i = 0;
+    //   while (true) {
+    //     if (i >= 100) {
+    //       break;
+    //     }
+    //     i++;
+    //   }
+    //   alert(i);
+      // console.log(i);
+
+
+      for (var i = 0; i < 10; i++) {
+        if (i ===5) {
+            console.log('현재 값이 5이므로 종료');
+            break;
+        }
+        console.log('i현재값:'+i);
+      }
+
+
+      for (var i = 0; i < 10; i++) {
+        if (i > 3) {
+          continue; //특정 조건에 해당 반복 건너 뜀.
+        }
+        console.log("현재 값:" + i);
+        //반복 프로세스 유지
+      }
+      console.log("마지막 값:" + i); //왜 오류 아니지?,,,,
+    </script>
+  </body>
+</html>

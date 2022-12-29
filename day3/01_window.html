@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Window 객체 - 전역객체, global 객체
+        alert('이것은 alert창입니다.');
+        window.alert('이것도 가능');
+
+
+        let pass = "";
+        if(pass ==null){
+
+        }else if(pass ==""){
+
+        }else if(pass !=""){
+            console.log(pass);
+        }
+
+        window.open("https://naver.com");
+
+        setTimeout(() => {
+            alert('프로그램 실행');
+        }, 1000);
+
+        var count = 0;
+        var fnc = setInterval(() => {
+            if(count < 5){
+                console.log('프로그램 실행:'+count);
+                count++;
+            }else {
+                console.log('종료');
+                clearInterval(fnc);
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

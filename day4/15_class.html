@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Car{
+
+            //객체 생성 및 초기화
+            constructor(modelName,modelYear,type,price){
+                this.modelName = modelName;
+                this.modelYear = modelYear;
+                this.type = type;
+                this.price = price;
+            }
+
+            //클래스의 내장함수
+            getModelName(){
+                return this.modelName
+            }
+
+            getModelYear(){
+                return this.modelYear
+            }
+
+            getType(){
+                return this.type
+            }
+
+            getPrcie(){
+                return this.price
+            }
+
+            setModelName(modelName){
+                //현재 객체의 modelName을 set함수에서 받는 이름으로 수정
+                this.modelName = modelName;
+            }
+
+            setModelYear(modelYear){
+                this.modelYear = modelYear;
+            }
+
+            setType(type){
+                this.type = type;
+            }
+
+            setPrice(price){
+                this.price = price;
+            }
+
+        }
+
+        //인스턴스 생성
+        let car = new Car('ionic','2022','e','5000');
+        car.setPrice('5500');
+
+        console.log(car.getPrcie());
+
+        let car2 = new Car('genesis','2021','g',6500);
+
+        class ElectricCar extends Car{
+            constructor(modelName,modelYear,price,chargeTime){
+                //부모생성자 가져다 씀?
+                super(modelName,modelYear,'e',price);
+                this.chargeTime = chargeTime;
+            }
+
+            getChargeTime(){
+                return this.chargeTime;
+            }
+            setChargeTime(time){
+                return this.chargeTime=time;
+            }
+        }
+
+        let eleCar = new ElectricCar('ionic5','2022',4000,60);
+        eleCar.setChargeTime(120);
+        console.log(eleCar.getChargeTime());
+        console.log(eleCar.getModelName());
+    </script>
+</body>
+</html>

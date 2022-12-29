@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let y = 1;
+        let x = y;
+
+        x = x + y;
+        console.log('x = x + y ='+x);
+        x = x - y;
+        console.log('x = x - y ='+x);
+        x = x * y;
+        console.log('x = x * y ='+x);
+        x = x / y;
+        console.log('x = x / y ='+x);
+        x = x % y;
+        console.log('x = x % y ='+x);
+        x = x & y;
+        console.log('x = x & y ='+x);
+        x = x | y;
+        console.log('x = x | y ='+x);
+        x = x ^ y;
+        console.log('x = x ^ y ='+x);
+
+        x=3;
+        y=2;
+        x = x ** y ; //**는 지수를 뜻함, 3의제곱
+        console.log('x = x ** y ='+x);
+
+        let x1 = 3;
+        let y1 = 4;
+        x1 = x1 == y1;
+        console.log('x1 = x1 == y1 :'+ x1);
+        x1 = x1 != y1;
+        console.log('x1 = x1 != y1 : '+ x1);
+
+        var x2 = 3;
+        var y2 = "3";
+        console.log('x2 == y2 :'+ x2 == y2);
+
+        var x2 = 3;
+        var y2 = "3";
+        console.log('x2 == y2 :'+ x2 == y2);
+
+        var o1 = true && true ;
+        var o2 = true && false;
+        var o3 = true || false;
+        var o4 = 3 == 3 && 4 ==4;
+
+        console.log("바닐라" + " " + "JS");
+        var myString = "바닐라";
+        myString += " JS";
+
+        var age = 18;
+        var isAdult = age >= 18 ? true :false;
+        console.log('isAdult :'+ isAdult);
+
+        var point = 92;
+        var grade = point >=90 ? "A" : point >=80? "B":"C";
+        console.log('grade :'+ grade);
+
+
+
+
+    </script>
+</body>
+</html>

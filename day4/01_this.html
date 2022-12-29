@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="doSearch(this);">버튼</button>
+    <select aria-label="State" name="aa" id="a" onchange="doChange(this);">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+    <script>
+        console.log('this:', this);
+      
+        function myFunction() {
+            console.log('myFunction this:', this);
+        }
+        myFunction();
+        
+        function doSearch(a) {
+            console.log('doSearch 이벤트:',a);
+        
+        }
+
+        function doChange(a) {
+            console.log('doChange 이벤트:',a);
+            console.log('doChange value:',a.value);
+    
+        }
+
+        let person = {
+            firstName:'John',
+            lastName:'Doe',
+            getFullName: function () {
+                return this.firstName + " " + this.lastName;
+                
+            }
+        };
+    </script>
+</body>
+</html>

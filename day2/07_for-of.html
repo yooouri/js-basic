@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var brands = ["애플","구글","페이스북","아마존","삼성전자"];
+        for (var brand of brands) {
+            console.log(brand); // 배열의 각 요소 출력
+        }
+
+        var lanqguage = "JavaScript"; //JavaScript\0
+    
+        for (var x of lanqguage) {
+            console.log(x);//문자열의 단일 문자 출력
+        }
+
+        // for (;;) { // 참 => 무한루프가 되는데 break를 걸어서 제어하기
+        //     console.log(brands);     
+        // }
+    </script>
+</body>
+</html>

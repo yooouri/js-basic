@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getScores() {
+            return [70,80,90];
+        }
+        let [x,y,z] = getScores();
+
+        function getProfile() {
+            return ['John','Doe', ['Red','Green','Blue']];
+        }
+
+        let [firstName, lastName, [color1,color2,color3]] = getProfile();
+        
+    </script>
+</body>
+</html>

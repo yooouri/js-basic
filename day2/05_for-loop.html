@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var brands = ["애플","구글","페이스북","아마존","삼성전자"];
+
+        console.log(brands[0]);
+        console.log(brands[1]);
+        console.log(brands[2]);
+        console.log(brands[3]);
+        console.log(brands[4]);
+
+        for(var i=0; i < brands.length; i++){
+            console.log(brands[i]);
+        }
+
+        var products = [
+            {
+                name: "솔의눈",
+                price : 700,
+            },
+            {
+                name: "커피",
+                price : 700,
+            },
+            {
+                name: "파워에이드",
+                price : 1200,
+            },
+            {
+                name: "오렌지",
+                price : 1200,
+            },
+            {
+                name: "보리차",
+                price : 1200,
+            },
+            {
+                name: "밀키스",
+                price : 800,
+            },
+        ];
+
+        let inputCoin = 800;
+        let len = products.length;
+        let outputList = [];
+
+        for (let i = 0; i < len; i++) {
+            if(products[i].price <= inputCoin){
+                outputList.push(products[i]);
+            }
+            
+        }
+
+        console.log('outputList:',outputList);
+
+        
+    </script>
+</body>
+</html>

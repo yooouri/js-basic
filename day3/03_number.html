@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x = 123;
+        var str = x.toString();
+        var str = (123).toString();
+
+        var x = 10.656;
+        var y= x.toExponential(2); //1.07e+1
+
+        var x = 10.656;
+        x.toFixed(0); //11
+        x.toFixed(2); //10.66
+
+        x.toPrecision();//10.656
+        x.toPrecision(2); //11
+        x.toPrecision(4); //10.66
+
+        parseInt("-10"); //-10
+        parseInt("-12.33"); // -12
+        parseInt("10 years"); //10
+        parseInt("10 20 30"); // 10
+        parseInt("years 10"); // NaN (*앞에만 체크함)
+        parseFloat(10); // 10
+    </script>
+</body>
+</html>

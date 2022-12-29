@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const getPerson = () =>{
+            return{
+                firstName:'John',
+                lastName:'Doe',
+                age:37,
+                email:'john@gmail.com',
+                city:'New York',
+                country:'USA'
+            }
+        }
+
+        var {firstName, lastName} = getPerson();
+        function displayFullName({firstName,lastName}) {
+            console.log(`${firstName} ${lastName}`);
+        }
+        displayFullName(getPerson());
+    </script>
+</body>
+</html>

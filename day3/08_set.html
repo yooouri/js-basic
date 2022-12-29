@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var mySet = new Set();
+        mySet.add(1);
+        for (let i = 0; i < 4; i++) {
+            mySet.add(i);
+            
+        }
+        mySet.size;
+        if(!mySet.has(1)){
+            mySet.add(1);
+        }
+        mySet.delete(2);
+        mySet.forEach(function(item){
+            console.log(item);
+        })
+
+        mySet.clear();
+        let nSet = new Set(); //typeof object
+        console.log(typeof nSet);
+
+
+
+    </script>
+</body>
+</html>

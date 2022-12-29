@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //생성자 함수
+        function BookInfo(title, price) {
+            this.name  = title;
+            this.publisher = '한빛미디어';
+            this.realprice = price*0.9;
+        }
+        //생성자 함수를 통한 객체 생성 (*반복적인 내용이 있을 경우, Object방식보다는 생성자를 이용하는게 효율성 좋음)
+        let book = new BookInfo('처음배우는 Azure', 34000);
+
+        let book11 = new BookInfo('처음배우는 Azure', 34000);
+        let book22 = new BookInfo('처음배우는 NHN 클라우드', 28000);
+        let book33 = new BookInfo('Azure 명강의', 40000);
+
+        //Object 리터럴
+        let book10 = {
+            name : '처음 배우는 Azure',
+            publisher: '한빛미디어',
+            price : 34000
+        }
+        let book20 = {
+            name : '처음 배우는 NHN 클라우드',
+            publisher: '한빛미디어',
+            price : 28000
+        }
+        let book30 = {
+            name : 'Azure 명강의',
+            publisher: '한빛미디어',
+            price : 40000
+        }
+
+        function NewBookInfo(title, price) {
+            this.name  = title;
+            this.publisher = '한빛미디어';
+            this.price = price;
+
+            this.realprice = function(price) {
+                return '할인 가격은' + this.price*0.9 + '원 입니다.';
+            }
+
+        }
+
+        let nbook = new NewBookInfo('Node.js 교과서', 36000);
+
+        
+        function MemberBookInfo(title, price) {
+            this.name  = title;
+            this.publisher = '한빛미디어';
+            this.price = price;
+
+            this.realprice = function(price) {
+                return '할인 가격은' + this.price*0.9 + '원 입니다.';
+            }
+
+            return {
+                userType:'member',
+                price:this.price*0.07 // === this.price*.07
+            }
+        }
+        let mbook = new MemberBookInfo('처음 배우는 애저', 34000);
+
+    </script>
+</body>
+</html>

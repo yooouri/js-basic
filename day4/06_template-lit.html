@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = '안녕';
+        let b = `${a}하세요`;
+        console.log(b);
+
+        function hello(name) {
+            console.log("Hello " + name + ". Welcome!");
+        }
+
+        function hello2(name) {
+            var name2 = "kim";
+            console.log(`Hello ${name2}. Welcome! ${name}`);
+        }
+
+        hello('yuri');
+        hello2('jeremy');
+    </script>
+</body>
+</html>

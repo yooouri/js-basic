@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let age = 17;
+        let busFare = 0;
+
+        if(age <=7){
+            busFare = 0;
+        }
+
+        if(age >=8 && age <=13){
+            busFare = 450;
+        }
+
+        if(age >=14 && age <=19){
+            busFare = 720;
+        }
+
+        if(age >=20 && age < 70){
+            busFare = 1200;
+        }
+
+        if(age >= 70){
+            busFare = 0;
+        }
+
+        let isAdult = false;
+
+        if(age < 18){
+            isAdult = true;
+        }
+
+        age=19;
+        if(age < 18){
+            isAdult = true;
+        }else{
+            isAdult=false;
+        }
+
+        let hour = 22;
+        if(hour<10){
+            console.log("Good morning");
+        }else if(hour<18){
+            console.log("Good afternoon");
+        }else if(hour<21){
+            console.log("Good evening");
+        }else {
+            console.log("Good night");
+        }
+    
+
+        if(false){
+            console.log('if문 실행');
+        }else{
+            console.log('else문 실행');
+        }
+
+        if(undefined){
+            console.log('if문 실행');
+        }else{
+            console.log('else문 실행');
+        }
+
+        if(null){
+            console.log('if문 실행');
+        }else{
+            console.log('else문 실행');
+        }
+
+        if(0){
+            console.log('if문 실행');
+        }else{
+            console.log('else문 실행');
+        }
+
+        if(""){
+            console.log('if문 실행');
+        }else{
+            console.log('else문 실행');
+        }
+    </script>
+</body>
+</html>
